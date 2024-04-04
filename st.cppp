@@ -1,0 +1,70 @@
+class Stack{
+public:
+int *arr;
+int size;
+int top1;
+int top2;
+//CONSTRUCTOR
+Stack(int size)
+{
+arr=new int [size];
+this->size=size;
+top1=-1
+top2=size;
+}
+//PUSHING ELEMENTS IN STACK 1
+void push1 (int data)
+{
+if(top2-top1==1)
+{
+//overflow condition
+cout<<"overflow"<<endl;
+}
+else
+{
+top1++
+ar[top1]=data;
+}
+}
+//PUSHING ELEMENTS IN STACK 2
+void push2 (int data)
+{
+if(top2-top1==1)
+{
+//overflow condition
+cout<<"overflow"<<endl;
+}
+else
+{
+top2--;
+ar[top2]=data;
+}
+}
+//POPPING ELEMENTS FROM STACK 1
+void pop1()
+{
+if(top1==-1)
+{
+//stack is empty
+cout<<"underflow condition"
+}
+else
+{
+arr[top1]=0;
+top1--;
+}
+}
+//POPPING ELEMENT FROM STACK2
+void pop2()
+{
+if(top2==size)
+{
+//stack is empty
+cout<<"underflow condition"
+}
+else
+{
+arr[top2]=0;
+top2++;
+}
+}
